@@ -1,5 +1,9 @@
 # 🏠 Lease Reader – AI Contract Assistant
 
+**🔗 Live demo:** https://kxhtqbyxayndg5wcvoadmg.streamlit.app
+
+**📄 Try it with:** [sample_lease.pdf](sample_lease.pdf)
+
 An AI tool that reads tenancy contracts (PDF), extracts the key details into a table, and answers questions about the lease with the exact section as source.
 
 ## The problem
@@ -18,8 +22,8 @@ Property companies manage hundreds of lease contracts. Finding the rent, dates, 
 
 ## Testing
 Evaluated with a test set of known answers:
-- Extraction accuracy checked field by field
-- Q&A checked on answerable and unanswerable questions
+- Extraction accuracy: 9 / 9 fields correct
+- Q&A accuracy: 5 / 5, including an unanswerable question correctly answered with "I don't know"
 
 ## Tech stack
 Python · Google Gemini API · Pydantic · ChromaDB · pypdf · pandas · Streamlit
